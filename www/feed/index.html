@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#1A1D27" />
+  <meta name="description" content="Access Freemium Movies" />
+  <link rel="icon" href="../src/assets/img/profile.jpg" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="../src/css/preloader.css" />
+  <link rel="stylesheet" type="text/css" href="../src/css/app.css" />
+  <link rel="stylesheet" type="text/css" href="../src/css/content.css" />
+  <link rel="stylesheet" type="text/css" href="../src/css/icon.css" />
+  <title>Lenstream | Watch Freemium Movies</title>
+  <script defer src="../src/js/jquery.js"></script>
+</head>
+<body id="app">
+  <div class="background-image-container" id="backgroundImage"></div>
+  <div class="posted-data-container">
+    <div class="posted-data-card-container">
+      <div class="posted-data-card-content-container">
+        <div class="posted-data-card-image-overlay"></div>
+        <img class="posted-data-card-image" src="../src/assets/img/thor-love-and-thunder.png" alt="Thor">
+        <p class="posted-data-card-image-title">Thor: Love and Thunder</p>
+        <p class="posted-data-card-image-description">2022 | FHD | English</p>
+        <div class="posted-data-card-button-container">
+          <div class="posted-data-card-button">Stream Movie
+            <i class="fal fa-play-circle posted-data-card-button-icon" data-toggle="tooltip"
+              title="View Information"></i>
+          </div>
+        </div>
+      </div>
+      <div class="posted-data-card-content-container">
+        <div class="posted-data-card-image-overlay"></div>
+        <img class="posted-data-card-image" src="../src/assets/img/logan.jpg" alt="Thor">
+        <p class="posted-data-card-image-title">Logan</p>
+        <p class="posted-data-card-image-description">2022 | FHD | English</p>
+        <div class="posted-data-card-button-container">
+          <div class="posted-data-card-button">Stream Movie
+            <i class="fal fa-play-circle posted-data-card-button-icon" data-toggle="tooltip"
+              title="View Information"></i>
+          </div>
+        </div>
+      </div>
+      <div class="posted-data-card-content-container">
+        <div class="posted-data-card-image-overlay"></div>
+        <img class="posted-data-card-image" src="../src/assets/img/doctor-strange-multiverse-of-madness.png" alt="Thor">
+        <p class="posted-data-card-image-title">Doctor Strange</p>
+        <p class="posted-data-card-image-description">2022 | FHD | English</p>
+        <div class="posted-data-card-button-container">
+          <div class="posted-data-card-button">Stream Movie
+            <i class="fal fa-play-circle posted-data-card-button-icon" data-toggle="tooltip"
+              title="View Information"></i>
+          </div>
+        </div>
+      </div>
+      <div class="posted-data-card-content-container">
+        <div class="posted-data-card-image-overlay"></div>
+        <img class="posted-data-card-image" src="../src/assets/img//all-of-us-are-dead.png" alt="Thor">
+        <p class="posted-data-card-image-title">All of us are dead</p>
+        <p class="posted-data-card-image-description">2022 | FHD | English</p>
+        <div class="posted-data-card-button-container">
+          <div class="posted-data-card-button">Stream Movie
+            <i class="fal fa-play-circle posted-data-card-button-icon" data-toggle="tooltip"
+              title="View Information"></i>
+          </div>
+        </div>
+      </div>
+      <div class="posted-data-card-content-container">
+        <div class="posted-data-card-image-overlay"></div>
+        <img class="posted-data-card-image" src="../src/assets/img/squid-game.jpg" alt="Thor">
+        <p class="posted-data-card-image-title">Squid Game</p>
+        <p class="posted-data-card-image-description">2022 | FHD | English</p>
+        <div class="posted-data-card-button-container">
+          <div class="posted-data-card-button">Stream Movie
+            <i class="fal fa-play-circle posted-data-card-button-icon" data-toggle="tooltip"
+              title="View Information"></i>
+          </div>
+        </div>
+      </div>
+      <div class="posted-data-card-content-container">
+        <div class="posted-data-card-image-overlay"></div>
+        <img class="posted-data-card-image" src="../src/assets/img/Johnny-English-Strikes-Again.jpg" alt="Thor">
+        <p class="posted-data-card-image-title">Johnny English</p>
+        <p class="posted-data-card-image-description">2022 | FHD | English</p>
+        <div class="posted-data-card-button-container">
+          <div class="posted-data-card-button">Stream Movie
+            <i class="fal fa-play-circle posted-data-card-button-icon" data-toggle="tooltip"
+              title="View Information"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--APP BAR-->
+  <div class="app-bar-container">
+    <div class="app-bar-content-container">
+      <div class="app-bar-left-content-container">
+        <i class="fal fa-bars app-bar-icon" id="appBarBarIcon" data-toggle="tooltip" title="Log In to your account"></i>
+        <p class="app-bar-page-title" id="pageTitle">Welcome back Allen!</p>
+      </div>
+      <div class="app-bar-right-content-container">
+        <i class="far fa-search app-bar-icon" id="searchIcon" data-toggle="tooltip" title="Search"></i>
+        <i class="fas fa-ellipsis-v app-bar-icon" id="dropDownMenuIcon" data-toggle="tooltip"
+          title="Drop-down Menu"></i>
+      </div>
+    </div>
+  </div>
+  <!--DROP DOWN MENU-->
+  <div class="drop-down-menu-overlay" id="dropDownMenuOverlay"></div>
+  <div class="drop-down-menu-container" id="dropDownMenuContainer">
+    <div class="drop-down-menu-content-container">
+      <i class="far fa-question-circle drop-down-menu-icon"></i>
+      <p class="drop-down-menu-icon-text" id="dropDownMenuAboutIconText" data-toggle="tooltip" title="About the app">
+        About</p>
+    </div>
+    <div class="drop-down-menu-content-container">
+      <i class="far fa-cog drop-down-menu-icon"></i>
+      <p class="drop-down-menu-icon-text" id="dropDownMenuSettingsIconText" data-toggle="tooltip" title="Settings">
+        Settings
+      </p>
+    </div>
+    <div class="drop-down-menu-content-container">
+      <i class="far fa-sign-out drop-down-menu-icon"></i>
+      <p class="drop-down-menu-icon-text" id="dropDownMenuLoginIconText" data-toggle="tooltip" title="Log Out">Log Out
+      </p>
+    </div>
+  </div>
+  <!--BOTTOM NAVIGATION BAR-->
+  <div class="bottom-navigation-bar-container">
+    <div class="bottom-navigation-bar-content-container">
+      <div class="bottom-navigation-bar-content-flex-container">
+        <div class="bottom-navigation-bar-text-icon-container">
+          <i class="fa fa-home bottom-navigation-bar-icon" id="homeIcon" data-toggle="tooltip" title="Home"></i>
+          <div class="bottom-navigation-bar-text" id="homeText">Home</div>
+        </div>
+        <div class="bottom-navigation-bar-text-icon-container">
+          <i class="far fa-analytics bottom-navigation-bar-icon" data-toggle="tooltip" title="Dashboard"></i>
+          <div class="bottom-navigation-bar-text">Dashboard</div>
+        </div>
+        <div class="bottom-navigation-bar-text-icon-container">
+          <i class="far fa-users bottom-navigation-bar-icon" data-toggle="tooltip" title="Community"></i>
+          <div class="bottom-navigation-bar-text">Community</div>
+        </div>
+        <div class="bottom-navigation-bar-text-icon-container">
+          <i class="far fa-comment-alt-lines bottom-navigation-bar-icon" data-toggle="tooltip" title="Chat"></i>
+          <div class="bottom-navigation-bar-text">Chat</div>
+        </div>
+        <div class="bottom-navigation-bar-text-icon-container">
+          <i class="far fa-envelope bottom-navigation-bar-icon" data-toggle="tooltip" title="Email"></i>
+          <div class="bottom-navigation-bar-text">Email</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-navigation-bar-floating-action-button" id="bottomNavigationBarFloatingActionButton"
+    data-toggle="tooltip" title="Create a post">
+    <i class="far fa-external-link-alt bottom-navigation-bar-icon" id="bottomNavBarIcon"></i>
+  </div>
+  <!--FLOATING ACTION BUTTON DRAWER-->
+  <div class="floating-action-button-drawer-overlay" id="floatingActionButtonDrawerOverlay"></div>
+  <div class="floating-action-button-drawer-container" id="floatingActionButtonDrawerContainer">
+    <div class="floating-action-button-drawer-app-bar-container">
+      <div class="floating-action-button-drawer-content-container">
+        <div class="floating-action-button-drawer-left-container">
+          <i class="far fa-arrow-left app-bar-icon" id="floatingActionButtonDrawerBackIcon"></i>
+          <p class="floating-action-button-drawer-page-title">Post Movie</p>
+        </div>
+      </div>
+    </div>
+    <form action="#" method="post">
+      <button type="submit" class="floating-action-button-drawer-post-button" id="floatingActionButtonDrawerPostButton"
+        data-toggle="tooltip" title="Post">
+        <i class="far fa-share-all bottom-navigation-bar-icon" id="floatingActionButtonDrawerPostButton"></i>
+      </button>
+    </form>
+  </div>
+  <!--SEARCH DRAWER-->
+  <div class="search-drawer-overlay" id="searchDrawerOverlay"></div>
+  <div class="search-drawer-container" id="searchDrawerContainer">
+    <div class="search-app-bar-container">
+      <div class="search-app-bar-content-container">
+        <div class="search-app-bar-left-container">
+          <i class="far fa-arrow-left app-bar-icon" id="searchBackIcon"></i>
+          <p class="hidden-page-title">.</p>
+          <form action="#" method="get">
+            <input type="text" class="search-input" id="searchInput" name="search" placeholder="Search"
+              autocomplete="off" aria-label="search">
+            <button type="submit" class="search-button" id="searchButton" name="query"></button>
+          </form>
+        </div>
+        <div class="search-app-bar-right-container">
+          <i class="far fa-microphone app-bar-icon" id="voiceRecognitionIcon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="search-image-container">
+      <img class="search-image" loading="lazy" src="../src/assets/svg/search.svg" alt="search">
+      <p class="search-image-text">What would you like to search?</p>
+    </div>
+  </div>
+  <!--SETTINGS DRAWER-->
+  <div class="settings-drawer-overlay" id="settingsDrawerOverlay"></div>
+  <div class="settings-drawer-container" id="settingsDrawer">
+    <div class="settings-drawer-app-bar-container">
+      <div class="settings-drawer-app-bar-content-container">
+        <div class="settings-drawer-app-bar-left-container">
+          <i class="far fa-arrow-left settings-drawer-back-icon" id="settingsDrawerBackIcon" data-toggle="tooltip"
+            title="Back"></i>
+          <p class="settings-drawer-page-title">Settings</p>
+        </div>
+      </div>
+      <!--THEME-->
+      <div class="color-theme-container">
+        <div class="color-theme-content-container">
+          <div class="color-theme-left-content-container">
+            <i class="far fa-clouds-sun color-theme-icon"></i>
+            <p class="color-theme-text">Day Mode</p>
+          </div>
+          <div class="color-theme-right-content-container">
+            <input type="checkbox" class="checkbox" id="colorThemeSwitch" onclick="changeStatus()"
+              aria-label="color-theme-switch" />
+            <label class="label" for="colorThemeSwitch">
+              <div class="ball" data-toggle="tooltip" title="Switch">
+
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--SIDE DRAWER-->
+  <div class="side-nav-drawer-overlay" id="sideNavDrawerOverlay"></div>
+  <div class="side-nav-drawer-container" id="sideNavDrawerContainer">
+    <div class="side-nav-drawer-content-container">
+      <div class="side-nav-drawer-top-content-container">
+        <img class="side-nav-drawer-image" loading="lazy" src="../src/assets/img/profile.jpg" alt="profile"
+          data-toggle="tooltip" title="View Profile">
+        <div class="side-nav-drawer-text-container">
+          <p class="side-nav-drawer-main-text" data-toggle="tooltip" title="View Profile">Allen Charls Casul</p>
+          <p class="side-nav-drawer-main-text-description">Admin <i class="fas fa-badge-check verifiedUser"
+              data-toggle="tooltip" title="Verified User"></i></p>
+        </div>
+      </div>
+    </div>
+    <hr class="line">
+    <div class="side-nav-drawer-bottom-content-container">
+      <div class="side-nav-drawer-bottom-content-flex-container">
+        <i class="far fa-user-cog side-nav-drawer-bottom-icon"></i>
+        <p class="side-nav-drawer-bottom-text" data-toggle="tooltip" title="Account Settings">Account Settings</p>
+      </div>
+      <div class="side-nav-drawer-bottom-content-flex-container">
+        <i class="far fa-sign-out side-nav-drawer-bottom-icon"></i>
+        <p class="side-nav-drawer-bottom-text" data-toggle="tooltip" title="Log Out">Log Out</p>
+      </div>
+    </div>
+  </div>
+  <!--PRELOADER-->
+  <div class="preloader-overlay" id="preloaderOverlay">
+    <div class="preloader-container">
+      <div class="preloader-content-container">
+        <img class="preloader" src="../src/assets/gif/pulse.gif" alt="pulse-preloader">
+      </div>
+    </div>
+    <div class="preloader-skeleton-container">
+      <div class="preloader-skeleton-content-container">
+        <div class="preloader-skeleton-card"></div>
+        <div class="preloader-skeleton-card"></div>
+        <div class="preloader-skeleton-card"></div>
+        <div class="preloader-skeleton-card"></div>
+        <div class="preloader-skeleton-card"></div>
+      </div>
+    </div>
+    <script defer src="../src/js/preloader.js"></script>
+    <script defer src="../src/js/feed.js"></script>
+    <script defer src="../src/js/theme.js"></script>
+</body>
+</html>
